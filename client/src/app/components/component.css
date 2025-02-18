@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#171717;
+    height: 40px;
+    padding: 5px;
+    border-bottom: solid 1px;
+    border-color: #ffffff33;
+    margin-bottom: 25px;
+    width: 100vw;
+  }

@@ -4,28 +4,12 @@ import styles from "./page.module.css";
 import { useState } from "react";
 import Link from "next/link";
 import recipes from "./recipes.json"
-  
-const ingredients = {
-    Сахар: { amount: 100, unit: 'г' },
-    Мука: { amount: 200, unit: 'г' },
-    Яйца: { amount: 3, unit: 'шт' },
-    Масло: { amount: 150, unit: 'г' },
-    Шоколад: { amount: 50, unit: 'г' },
-  };
+import Header from "./components/header";
+
   
   export default function Home() {
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.logo}>
-        <strong>KOMODACHI</strong>
-        </div>
-        <div>
-        <a className={styles.a} href="/qwerty">qwerty</a>
-        <a className={styles.a}>asdfg</a>
-        <a className={styles.a}>zxcvvb</a>          
-        </div>
-      </header>
       <div className={styles.gg}>
       <main className={styles.main}>
        <div>
