@@ -1,8 +1,8 @@
 "use client"
 import { use } from 'react';
 import { useRouter } from 'next/navigation';
-import recipes from '../recipes.json';
-import Ingredients from './scomponent';
+import recipes from "./recipes.json";
+import Ingredients from '../../components/scomponent.js';
 import Image from 'next/image';
 
 export default function Recipe({ params }) {
@@ -12,7 +12,7 @@ export default function Recipe({ params }) {
 
   return (
     <div>
-      <h1>{recipe.title}</h1>
+      <h1>{recipe.title}</h1>;
       <Image
         src={recipe.image}
         width={250}

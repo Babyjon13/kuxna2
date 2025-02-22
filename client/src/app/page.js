@@ -3,15 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { useState } from "react";
 import Link from "next/link";
-import recipes from "./recipes.json"
-  
-const ingredients = {
-    Сахар: { amount: 100, unit: 'г' },
-    Мука: { amount: 200, unit: 'г' },
-    Яйца: { amount: 3, unit: 'шт' },
-    Масло: { amount: 150, unit: 'г' },
-    Шоколад: { amount: 50, unit: 'г' },
-  };
+import recipes from "./recipe/[index]/recipes.json"
   
   export default function Home() {
   return (
