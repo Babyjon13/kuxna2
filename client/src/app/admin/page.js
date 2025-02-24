@@ -82,13 +82,14 @@ export default function HomePage() {
   return (
     <div className={styles.div}>
       <form className={styles.form} onSubmit={handleSubmit}>
+        <h1>Заголовок</h1>
         <input
           type='text'
           value={title}
           title='Заголовок'
           onChange={(e) => setTitle(e.target.value)}
-          placeholder='Введите заголовок рецепта:'
         />
+        <h2>Описание рецепта</h2>
         <textarea
           type="text"
           title='Подзаголовок'
@@ -97,6 +98,7 @@ export default function HomePage() {
           placeholder="Введите краткое описание рецепта:"
           required
         />
+        <h2>Кол порций</h2>
         <input
           type='number'
           value={Portion}
@@ -106,17 +108,22 @@ export default function HomePage() {
         
         <div>
           <h3>Ингредиенты:</h3>
-          {ingredients.map((item) => (
-            <Ing key={item.id} id={item.id} removeComponent={removeIngredient} />
-          ))}
+          <ol>
+          {ingredients.map((item,ind) => (
+              <li key={ind}><Ing key={item.id} id={item.id} removeComponent={removeIngredient} /></li>
+              
+            ))}
+            </ol>
           <button onClick={handleAddIngredient} type="button">Добавить ингредиент</button>
         </div>
         
         <div>
           <h3>Шаги приготовления:</h3>
-          {steps.map((item) => (
-            <Step key={item.id} id={item.id} removeComponent={removeStep} handleImageUpload={handleImageUpload} image={item.image} />
+          <ol>
+          {steps.map((item,index) => (
+            <li key={index}><Step key={item.id} id={item.id} removeComponent={removeStep} handleImageUpload={handleImageUpload} image={item.image} /></li>
           ))}
+          </ol>
           <button onClick={handleAddStep} type="button">Добавить шаг</button>
         </div>
 

@@ -1,16 +1,5 @@
 
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color:#171717;
-  height: 40px;
-  padding: 5px;
-  border-bottom: solid 1px;
-  border-color: #ffffff33;
-  margin-bottom: 25px;
-  width: 100vw;
-}
+
 .logo{
   display: flex;
   align-items: center;
@@ -43,6 +32,11 @@ a:hover{
   height: 100vh;
   
 }
+.nav li {
+  width: 100%;
+  display: flex;
+  align-items:center;
+}
 
 .span{
   display: flex;
@@ -50,7 +44,9 @@ a:hover{
   width:fit-content;
   justify-content: space-around;
 }
-
+.lenta:hover{
+  background-color: black;
+}
 .span button{
   width: 25px;
   height: 25px;

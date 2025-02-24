@@ -9,9 +9,9 @@ export default function Step({ id, removeComponent, handleImageUpload, image }) 
   
     return (
       <div>
+        {image && <img src={image} alt="Шаг приготовления" style={{ width: '100px', height: '100px' }} />}
         <textarea placeholder='Шаг приготовления'></textarea>
         <input type="file" accept="image/*" onChange={handleImageChange} />
-        {image && <img src={image} alt="Шаг приготовления" style={{ width: '100px', height: '100px' }} />}
         <button onClick={() => removeComponent(id)} type="button">Удалить</button>
       </div>
     );

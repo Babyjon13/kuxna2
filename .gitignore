@@ -5,7 +5,7 @@
 /node_modules/
 /.next/
 /.qodo/
-/.pnp
+.pnp
 .pnp.*
 .yarn/*
 !.yarn/patches

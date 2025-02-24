@@ -1,8 +1,8 @@
 "use client"
 import { use } from 'react';
 import { useRouter } from 'next/navigation';
-import recipes from "./recipes.json";
-import Ingredients from '../../components/scomponent.js';
+import recipes from "@app/recipes.json";
+import Ingredients from '../../components/ingcalc.js';
 import Image from 'next/image';
 
 export default function Recipe({ params }) {
